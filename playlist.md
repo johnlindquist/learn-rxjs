@@ -19,3 +19,10 @@
 
 [https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/configure-sources-with-functions/?module=/src/index.js](https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/configure-sources-with-functions/?module=/src/index.js) 
 
+
+## Create a Source From Two Sources 
+
+[https://github.com/johnlindquist/learn-rxjs/tree/create-a-source-from-two-sources](https://github.com/johnlindquist/learn-rxjs/tree/create-a-source-from-two-sources) 
+
+[https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/create-a-source-from-two-sources/?module=/src/index.js](https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/create-a-source-from-two-sources/?module=/src/index.js) 
+

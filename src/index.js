@@ -15,10 +15,12 @@ let fromArray = array => destination => {
 let clickSource = fromEvent(document, "click")
 let numbersSource = fromArray([5, 6, 7])
 
-numbersSource(logValue)
-clickSource(logValue)
+let fromBothSources = (source1, source2) => destination => {
+  source1(destination)
+  source2(destination)
+}
 
-clickSource(event => {
-  console.log("hello")
-})
+let clickAndNumbers = fromBothSources(clickSource, numbersSource)
+
+clickAndNumbers(logValue)
 
