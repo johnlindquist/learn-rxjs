@@ -1,26 +1,60 @@
-let logValue = value => {
-  console.log(value)
-}
-
-let fromEvent = (element, eventType) => destination => {
-  element.addEventListener(eventType, destination)
-}
-
-let fromArray = array => destination => {
-  for (let item of array) {
-    destination(item)
+let log = {
+  next: value => {
+    console.log(value);
+  },
+  done: () => {
+    console.log("done");
   }
-}
+};
 
-let clickSource = fromEvent(document, "click")
-let numbersSource = fromArray([5, 6, 7])
+let create = fn =>
+  ({ next, done }) => {
+    console.log(next, done)
+    let stop = fn({
+      next, done() {
+        done()
+        console.log("stop", stop)
+        if (stop) stop()
+      }
+    })
 
-let fromBothSources = (source1, source2) => destination => {
-  source1(destination)
-  source2(destination)
-}
+    return stop
+  }
 
-let clickAndNumbers = fromBothSources(clickSource, numbersSource)
 
-clickAndNumbers(logValue)
+let first = source => create(({ next, done }) => {
+  return source({
+    next: value => {
+      console.log(done);
 
+      next(value);
+      done();
+    },
+    done
+  });
+});
+
+let fromArray = array => ({ next, done }) => {
+  let isDone = false;
+
+
+  let go = () => {
+    for (let item of array) {
+      next(item);
+      console.log(isDone);
+      if (isDone) break;
+    }
+  }
+
+  setTimeout(go, 0)
+
+
+  return () => {
+    console.log("yay");
+    isDone = true;
+  };
+};
+
+
+
+first(fromArray([5, 6, 7]))(log);
