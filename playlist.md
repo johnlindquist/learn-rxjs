@@ -12,3 +12,10 @@
 
 [https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/create-a-numbers-source/?module=/src/index.js](https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/create-a-numbers-source/?module=/src/index.js) 
 
+
+## Configure Sources with Functions 
+
+[https://github.com/johnlindquist/learn-rxjs/tree/configure-sources-with-functions](https://github.com/johnlindquist/learn-rxjs/tree/configure-sources-with-functions) 
+
+[https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/configure-sources-with-functions/?module=/src/index.js](https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/configure-sources-with-functions/?module=/src/index.js) 
+

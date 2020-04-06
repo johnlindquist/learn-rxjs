@@ -2,19 +2,20 @@ let logValue = value => {
   console.log(value)
 }
 
-let clickSource = destination => {
-  document.addEventListener("click", destination)
+let fromEvent = (element, eventType) => destination => {
+  element.addEventListener(eventType, destination)
 }
 
-let numbersSource = destination => {
-  for (let number of [1, 2, 3]) {
-    destination(number)
+let fromArray = array => destination => {
+  for (let item of array) {
+    destination(item)
   }
 }
 
-numbersSource(event => {
-  console.log("hello")
-})
+let clickSource = fromEvent(document, "click")
+let numbersSource = fromArray([5, 6, 7])
+
+numbersSource(logValue)
 clickSource(logValue)
 
 clickSource(event => {
