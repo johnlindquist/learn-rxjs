@@ -1,8 +1,12 @@
-let callback = event => {
-  console.log(event)
-}
-
-let createClickSource = destination => {
+let clickSource = destination => {
   document.addEventListener("click", destination)
 }
+
+clickSource(event => {
+  console.log(event)
+})
+
+clickSource(event => {
+  console.log("hello")
+})
 
