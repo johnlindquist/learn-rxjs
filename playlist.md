@@ -40,3 +40,10 @@
 
 [https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/take-only-the-first-value/?module=/src/index.js](https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/take-only-the-first-value/?module=/src/index.js) 
 
+
+## Mergemap 
+
+[https://github.com/johnlindquist/learn-rxjs/tree/mergemap](https://github.com/johnlindquist/learn-rxjs/tree/mergemap) 
+
+[https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/mergemap/?module=/src/index.js](https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/mergemap/?module=/src/index.js) 
+

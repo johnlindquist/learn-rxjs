@@ -5,8 +5,16 @@ let logValue = value => {
 }
 
 let clickSource = fromEvent(document, "click")
-fromFirst(clickSource)(logValue)
 
 let numbersSource = fromArray([1, 2, 3])
-fromFirst(numbersSource)(logValue)
+
+let fromOneThenOther = (source1, source2) => destination => {
+  source1(value => {
+    source2(value => {
+      destination(value)
+    })
+  })
+}
+
+fromOneThenOther(clickSource, fromFirst(numbersSource))(logValue)
 
