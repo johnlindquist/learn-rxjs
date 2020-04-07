@@ -1,6 +1,11 @@
 export let fromBothSources = (source1, source2) => destination => {
-    source1(destination)
-    source2(destination)
+    let stop1 = source1(destination)
+    let stop2 = source2(destination)
+
+    return () => {
+        stop1()
+        stop2()
+    }
 }
 
 export let fromEvent = (element, eventType) => destination => {
@@ -31,4 +36,6 @@ export let fromFirst = source => destination => {
         destination(value)
         stop()
     })
+
+    return stop
 }

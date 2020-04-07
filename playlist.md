@@ -47,3 +47,10 @@
 
 [https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/mergemap/?module=/src/index.js](https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/mergemap/?module=/src/index.js) 
 
+
+## Always Return a Stop Function 
+
+[https://github.com/johnlindquist/learn-rxjs/tree/always-return-a-stop-function](https://github.com/johnlindquist/learn-rxjs/tree/always-return-a-stop-function) 
+
+[https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/always-return-a-stop-function/?module=/src/index.js](https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/always-return-a-stop-function/?module=/src/index.js) 
+
