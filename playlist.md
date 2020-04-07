@@ -33,3 +33,10 @@
 
 [https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/extract-helper-functions-to-a-separate-file/?module=/src/index.js](https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/extract-helper-functions-to-a-separate-file/?module=/src/index.js) 
 
+
+## Take only the First Value 
+
+[https://github.com/johnlindquist/learn-rxjs/tree/take-only-the-first-value](https://github.com/johnlindquist/learn-rxjs/tree/take-only-the-first-value) 
+
+[https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/take-only-the-first-value/?module=/src/index.js](https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/take-only-the-first-value/?module=/src/index.js) 
+

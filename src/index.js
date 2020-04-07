@@ -1,15 +1,12 @@
-import { fromArray, fromEvent, fromBothSources } from "./from"
+import { fromArray, fromEvent, fromFirst } from "./from"
+
 let logValue = value => {
   console.log(value)
 }
 
-
-
 let clickSource = fromEvent(document, "click")
-let numbersSource = fromArray([5, 6, 7])
+fromFirst(clickSource)(logValue)
 
-
-let clickAndNumbers = fromBothSources(clickSource, numbersSource)
-
-clickAndNumbers(logValue)
+let numbersSource = fromArray([1, 2, 3])
+fromFirst(numbersSource)(logValue)
 
