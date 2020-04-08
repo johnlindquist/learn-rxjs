@@ -1,20 +1,29 @@
-import { fromArray, fromEvent, fromFirst, fromBothSources } from "./from"
+import { fromFirst } from "./from"
 
 let logValue = value => {
   console.log(value)
 }
 
-let clickSource = fromEvent(document, "click")
+let fromInterval = time => destination => {
+  let id = setInterval(() => {
+    destination(new Date().getSeconds())
+  }, time)
 
-let numbersSource = fromArray([1, 2, 3])
+  return () => {
+    clearInterval(id)
+  }
+}
 
-let fromOneThenOther = (source1, source2) => destination => {
-  return source1(value => {
-    return source2(value => {
-      destination(value)
-    })
+let fromAmount = amount => source => destination => {
+  let i = 0
+  let stop = source(value => {
+    destination(value)
+    i++
+    if (i === amount) stop()
   })
 }
 
-let keyDownSource = fromEvent(document, "keydown")
-fromFirst(fromBothSources(clickSource, keyDownSource))(logValue)
+fromAmount(3)(fromInterval(1000))(logValue)
+
+
+

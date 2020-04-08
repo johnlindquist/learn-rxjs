@@ -54,3 +54,10 @@
 
 [https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/always-return-a-stop-function/?module=/src/index.js](https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/always-return-a-stop-function/?module=/src/index.js) 
 
+
+## Create a Source Around Setinterval 
+
+[https://github.com/johnlindquist/learn-rxjs/tree/create-a-source-around-setinterval](https://github.com/johnlindquist/learn-rxjs/tree/create-a-source-around-setinterval) 
+
+[https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/create-a-source-around-setinterval/?module=/src/index.js](https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/create-a-source-around-setinterval/?module=/src/index.js) 
+

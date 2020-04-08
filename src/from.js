@@ -39,3 +39,11 @@ export let fromFirst = source => destination => {
 
     return stop
 }
+
+export let fromOneThenOther = (source1, source2) => destination => {
+    return source1(value => {
+        return source2(value => {
+            destination(value)
+        })
+    })
+}
