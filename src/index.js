@@ -1,29 +1,40 @@
-import { fromFirst } from "./from"
-
 let logValue = value => {
   console.log(value)
 }
 
-let fromInterval = time => destination => {
+let isOdd = source => oldDestination => {
+  return source(value => {
+    if (value % 2) {
+      oldDestination(value)
+    }
+  })
+}
+
+let stopWhenGreaterThan10 = source => oldDestination => {
+  let stop = source(value => {
+
+    if (value > 10) {
+      stop()
+    } else {
+      oldDestination(value)
+    }
+  })
+}
+
+
+let interval = amount => oldDestination => {
+  let i = 0
   let id = setInterval(() => {
-    destination(new Date().getSeconds())
-  }, time)
+    oldDestination(i)
+    i++
+  }, amount)
 
   return () => {
     clearInterval(id)
   }
 }
 
-let fromAmount = amount => source => destination => {
-  let i = 0
-  let stop = source(value => {
-    destination(value)
-    i++
-    if (i === amount) stop()
-  })
-}
-
-fromAmount(3)(fromInterval(1000))(logValue)
+stopWhenGreaterThan10(isOdd(interval(1000)))(logValue)
 
 
 

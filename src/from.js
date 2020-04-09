@@ -47,3 +47,22 @@ export let fromOneThenOther = (source1, source2) => destination => {
         })
     })
 }
+
+export let fromInterval = time => destination => {
+    let id = setInterval(() => {
+        destination(new Date().getSeconds())
+    }, time)
+
+    return () => {
+        clearInterval(id)
+    }
+}
+
+export let fromAmount = amount => source => destination => {
+    let i = 0
+    let stop = source(value => {
+        destination(value)
+        i++
+        if (i === amount) stop()
+    })
+}

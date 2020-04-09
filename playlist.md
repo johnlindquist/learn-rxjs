@@ -61,3 +61,10 @@
 
 [https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/create-a-source-around-setinterval/?module=/src/index.js](https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/create-a-source-around-setinterval/?module=/src/index.js) 
 
+
+## Extracting Conditions and Behaviors to Functions 
+
+[https://github.com/johnlindquist/learn-rxjs/tree/extracting-conditions-and-behaviors-to-functions](https://github.com/johnlindquist/learn-rxjs/tree/extracting-conditions-and-behaviors-to-functions) 
+
+[https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/extracting-conditions-and-behaviors-to-functions/?module=/src/index.js](https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/extracting-conditions-and-behaviors-to-functions/?module=/src/index.js) 
+
