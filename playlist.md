@@ -68,3 +68,10 @@
 
 [https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/extracting-conditions-and-behaviors-to-functions/?module=/src/index.js](https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/extracting-conditions-and-behaviors-to-functions/?module=/src/index.js) 
 
+
+## Unwrap Functions with a Compose Function 
+
+[https://github.com/johnlindquist/learn-rxjs/tree/unwrap-functions-with-a-compose-function](https://github.com/johnlindquist/learn-rxjs/tree/unwrap-functions-with-a-compose-function) 
+
+[https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/unwrap-functions-with-a-compose-function/?module=/src/index.js](https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/unwrap-functions-with-a-compose-function/?module=/src/index.js) 
+

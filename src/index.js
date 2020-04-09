@@ -34,7 +34,13 @@ let interval = amount => oldDestination => {
   }
 }
 
-stopWhenGreaterThan10(isOdd(interval(1000)))(logValue)
+let compose = (...functions) => {
+  return functions.reduce((prevFn, nextFn) => (...args) => {
+    return prevFn(nextFn(...args))
+  })
+}
+
+compose(isOdd, stopWhenGreaterThan10, interval)(10)(logValue)
 
 
 
