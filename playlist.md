@@ -75,3 +75,10 @@
 
 [https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/unwrap-functions-with-a-compose-function/?module=/src/index.js](https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/unwrap-functions-with-a-compose-function/?module=/src/index.js) 
 
+
+## Create a Typeahead Component 
+
+[https://github.com/johnlindquist/learn-rxjs/tree/create-a-typeahead-component](https://github.com/johnlindquist/learn-rxjs/tree/create-a-typeahead-component) 
+
+[https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/create-a-typeahead-component/?module=/src/index.js](https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/create-a-typeahead-component/?module=/src/index.js) 
+
