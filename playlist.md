@@ -82,3 +82,10 @@
 
 [https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/create-a-typeahead-component/?module=/src/index.js](https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/create-a-typeahead-component/?module=/src/index.js) 
 
+
+## Create a Debounce Function to Handle Rapid Inputs 
+
+[https://github.com/johnlindquist/learn-rxjs/tree/create-a-debounce-function-to-handle-rapid-inputs](https://github.com/johnlindquist/learn-rxjs/tree/create-a-debounce-function-to-handle-rapid-inputs) 
+
+[https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/create-a-debounce-function-to-handle-rapid-inputs/?module=/src/index.js](https://codesandbox.io/embed/github/johnlindquist/learn-rxjs/tree/create-a-debounce-function-to-handle-rapid-inputs/?module=/src/index.js) 
+
